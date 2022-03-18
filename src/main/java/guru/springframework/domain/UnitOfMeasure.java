@@ -10,7 +10,7 @@ public class UnitOfMeasure {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String description;
-    private BigDecimal amount;
+
     public Long getId() {
         return id;
     }
@@ -23,12 +23,4 @@ public class UnitOfMeasure {
     public void setDescription(String description) {
         this.description = description;
     }
-    public BigDecimal getAmount() {
-        return amount;
-    }
-    public void setAmount(BigDecimal amount) {
-        this.amount = amount;
-    }
-
-    
 }
