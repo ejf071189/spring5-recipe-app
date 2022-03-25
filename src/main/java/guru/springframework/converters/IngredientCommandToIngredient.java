@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import guru.springframework.commands.IngredientCommand;
 import guru.springframework.domain.Ingredient;
+import lombok.Synchronized;
 
 @Component
 public class IngredientCommandToIngredient implements Converter<IngredientCommand, Ingredient> {
@@ -16,6 +17,7 @@ public class IngredientCommandToIngredient implements Converter<IngredientComman
         this.uomConverter = uomConverter;
     }
 
+    @Synchronized
     @Nullable
     @Override
     public Ingredient convert(IngredientCommand source) {
