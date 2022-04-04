@@ -77,7 +77,7 @@ public class RecipeServiceImplTest {
     }
 
     @Test
-    public void testGetRecipeCoomandById() throws Exception {
+    public void testGetRecipeCommandById() throws Exception {
         Recipe recipe = new Recipe();
         recipe.setId(1L);
         Optional<Recipe> recipeOptional = Optional.of(recipe);
